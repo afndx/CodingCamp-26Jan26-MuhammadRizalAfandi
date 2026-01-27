@@ -1,13 +1,134 @@
 <!doctype html>
+<!---->
 <html lang="en">
+  <!--default bahasa websisite bahasa inggris-->
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Test RevoU</title>
+    <title>Test RevoU Bootcamp</title>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
+    <!-- menghubungkan file css/tailwind -->
+     <!--cheatsheet tailwind ada di kombai-->
   </head>
   <body>
-    <h1>Hello World!</h1>
-    <h2>Apan Gimang</h2>
-    <h6>RevoU Batch 012</h6>
+    <!--hello world yang awal (bukan tailwind)-->
+    <p style="color: red">Hello World!</p>
+    <!-- <p class="text-3xl pb-4 text-blue-500 font-bold pl-6 pt-6 bg-yellow-100">Hello World!</p> -->
+    <!--pb = padding bottom, ml = margin left, mt = margin top-->
+    <!--kalau ingin background ngepas, pake padding bukan margin-->
+    <!--mengubah warna teks menjadi merah (atribut) dengan atribut value red, p = element-->
+    <hr />
+    <!--garis horizontal (horizontal rule)-->
+    <p>Halo, nama saya Afan</p>
+    <p>Saya sedang <br /> belajar web developmet</p>
+    <!-- penggunaan break (br) -->
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+    <!--heading dari 1 sampai 6-->
+    <!-- penampilan dan ukuran akan diatur dalam css/tailwind -->
+    <p>
+      Ini teks <b>tebal</b>, ini <i>miring</i>, ini <sub>bawah</sub> dan
+      <sup>atas</sup>
+    </p>
+    <!-- penggunaan bold (b), italic (i), subscript (sub), superscript (sup) (teks formating)-->
+    <ul>
+      <!--unordered list-->
+      <li>Pisang</li>
+      <li>Mangga</li>
+      <li>Jeruk</li>
+      <!--list item-->
+      <li>
+        Buah-buahan
+        <ul>
+          <li>Apel</li>
+          <li>Anggur</li>
+        </ul>
+      </li>
+    </ul>
+
+    <h1>Urutan Angka</h1>
+    <p>Berikut adalah daftar angka:</p>
+    <!--ordered list-->
+    <ol type+="1">
+      <li>Satu</li>
+      <li>Dua</li>
+      <li>Tiga</li>
+    </ol>
+    <ol type+="A">
+      <li>Alpha</li>
+      <li>Beta</li>
+      <li>Gamma</li>
+    </ol>
+
+    <h1>Tabel</h1>
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Company</th>
+          <th>Contact</th>
+          <th>Country</th>
+        </tr>
+        <tbody>
+          <tr>
+            <td>Alfreds Futterkiste</td>
+            <td>alfred@gmail.com</td>
+            <td>Germany</td>
+          </tr>
+          <tr>
+            <td>Budi</td>
+            <td>budy@gmail.com</td>
+            <td>Indonesia</td>
+          </tr>
+        </tbody>
+      </thead>
+    </table>
+
+    <h1>Gambar</h1>
+    <img src="/image/logo-PENS.png" 
+    height="100"
+    alt="Logo PENS"/>
+    <!--bisa menggunakan link gambar dari url luar-->
+    <!-- penggunaan gambar dengan atribut src (source) dan alt (alternative text), alt wajib diisi untuk aksesibilitas -->
+
+    <h1>Link</h1>
+    <p>link ke <a href="https://www.pens.ac.id">PENS</a></p>
+    
+    <h1>Form</h1>
+    <form>
+      <label>nama</label>
+      <input type="text" name="nama" placeholder="Tulis nama Anda"/>
+      <br />
+      <label>umur</label>
+      <input type="number" name="umur" min="0" max="120"/>
+      <br />
+      <label>email</label>
+      <input type="email" name="email" />
+      <br />
+      <label>password</label>
+      <input type="password" name="password" />
+      <br />
+      <label>gender</label>
+      <input type="radio" name="gender" value="male" /> Male
+      <input type="radio" name="gender" value="female" /> Female
+      <br />
+      <label>makanan favorit</label>
+      <select name="makanan_favorit">
+        <option value="nasi_goreng">Nasi Goreng</option>
+        <option value="sate">Sate</option>
+        <option value="rendang">Rendang</option>
+      </select>
+      <br />
+      <label>Comment</label>
+      <br />
+      <textarea name="comment" rows="5" cols="30" placeholder="Tulis komentar Anda"></textarea>
+      <br />
+      <input type="checkbox" name="subscribe" /> Saya setuju dengan syarat dan ketentuan
+      <br />
+      <input type="submit" value="Kirim" />
+    </form>
   </body>
 </html>
