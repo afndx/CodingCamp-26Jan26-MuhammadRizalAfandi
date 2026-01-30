@@ -1,0 +1,295 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header */
+header {
+  background-color: #dda853;
+}
+
+/* header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+} */
+
+.logo {
+  font-size: 32px;
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+nav a {
+  margin-left: 30px;
+  text-decoration: none;
+  color: #f5eedc !important;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #183b4e !important;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  padding: 80px 0 !important;
+  text-align: center;
+  background-image: url("../images/hero-background2.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Overlay warna */
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(245, 238, 220, 0.8);
+  z-index: 1;
+}
+
+.hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+.hero h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 16px;
+  color: #666;
+}
+
+.id-number {
+  margin-top: 60px;
+  color: #999;
+}
+
+/* Headquarter Section */
+.headquarter {
+  padding: 60px 0;
+  background-color: #ead196;
+}
+
+.headquarter h2 {
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+.locations {
+  display: flex;
+  justify-content: space-around;
+  gap: 50px;
+}
+
+.location {
+  text-align: center;
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  border: 2px solid #333;
+  border-radius: 50%;
+  margin: 0 auto 15px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Message Section */
+.message-section {
+  background-color: #f5eedc;
+  padding: 60px 0;
+}
+
+.form-wrapper {
+  display: flex;
+  gap: 40px;
+}
+
+.form-container,
+.result-container {
+  flex: 1;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.message-section h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+form input[type="text"],
+form input[type="date"],
+form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #27548a !important;
+  border-radius: 3px;
+}
+
+.radio-group {
+  margin-bottom: 15px;
+}
+
+.radio-group input[type="radio"] {
+  margin-right: 5px;
+}
+
+.radio-group label {
+  display: inline;
+  margin-right: 15px;
+  font-weight: normal;
+}
+
+form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #183b4e !important;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+form button:hover {
+  background-color: #0e232e !important;
+}
+
+.result-container h3 {
+  font-size: 14px;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+.result-container p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+  background-color: #dda853;
+  padding: 20px 0;
+  text-align: right;
+  border-top: 1px solid #ddd;
+}
+
+footer p {
+  font-size: 12px;
+  color: #666;
+}
+
+/* Custom Styles untuk melengkapi Bootstrap */
+
+.logo {
+  font-size: 32px;
+}
+
+.hero {
+  padding: 80px 0 !important;
+}
+
+.id-number {
+  margin-top: 60px;
+  font-size: 10px;
+}
+
+/* Circle untuk Headquarter */
+.circle {
+  width: 100px;
+  height: 100px;
+  border: 2px solid #333;
+  border-radius: 50%;
+}
+
+/* Penyesuaian spacing */
+.headquarter {
+  padding: 60px 0;
+}
+
+.message-section {
+  padding: 60px 0;
+}
+
+/* Styling tambahan untuk form result */
+.result-container h3 {
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+/* Profile Page Styles */
+#profile-hero {
+  background-image:
+    linear-gradient(rgba(102, 11, 5, 0.1)), url("../images/anggota.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#profile-hero h1,
+#profile-hero p {
+  color: #fff0c4;
+}
+
+.about-section img {
+  max-height: 400px;
+  object-fit: cover;
+}
+
+.vision-section .bg-white {
+  min-height: 400px;
+}
+
+.vision-section ul {
+  padding-left: 20px;
+}
+
+.vision-section li {
+  margin-bottom: 10px;
+}
